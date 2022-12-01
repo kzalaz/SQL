@@ -1,0 +1,20 @@
+CREATE TABLE furniture (id INTEGER PRIMARY KEY, name TEXT, cost INTEGER);
+INSERT INTO furniture VALUES (1, "dining table", 500);
+INSERT INTO furniture VALUES (2, "dining chair", 150);
+INSERT INTO furniture VALUES (3, "bed", 800);
+INSERT INTO furniture VALUES (4, "dresser", 1200);
+INSERT INTO furniture VALUES (5, "stool", 120);
+INSERT INTO furniture VALUES (6, "coffee table", 250);
+INSERT INTO furniture VALUES (7, "tv stands", 200);
+INSERT INTO furniture VALUES (8, "mirrors", 100);
+INSERT INTO furniture VALUES (9, "bookshelf", 350);
+INSERT INTO furniture VALUES (10, "benches", 225);
+INSERT INTO furniture VALUES (11, "ottoman", 240);
+INSERT INTO furniture VALUES (12, "side table", 125);
+INSERT INTO furniture VALUES (13, "entry table", 285);
+INSERT INTO furniture VALUES (14, "couch", 1500);
+INSERT INTO furniture VALUES (15, "arm chair", 800);
+SELECT * FROM furniture ORDER BY cost;
+SELECT * FROM furniture WHERE cost < 500;
+SELECT SUM (cost) FROM furniture;
+SELECT name, SUM (cost) FROM furniture GROUP BY id 
